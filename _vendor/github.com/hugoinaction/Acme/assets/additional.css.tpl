@@ -182,7 +182,7 @@ section {
   }
 
   aside~main {
-    max-width: calc(100% - 210px);
+    max-width: calc(100% - $sidebar);
   }
 }
 
