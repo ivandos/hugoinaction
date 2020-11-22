@@ -13,10 +13,10 @@ function addFormHandler() {
       });
       if (response.ok) {
           form.insertAdjacentHTML('afterend',
-            '<p>The form has been submitted.</p>');
+            '<div class="success">The form has been submitted.</div>');
       } else {
         form.insertAdjacentHTML('afterend',
-          '<p>The form could not be submitted. Please try again later.</p>');
+          '<div class="error">The form could not be submitted. Please try again later.</div>');
       }
       const message = form.nextElementSibling;
       form.reset();
